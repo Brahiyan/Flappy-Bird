@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://d1oif1r7ikrbx"]
+
+[ext_resource type="Texture2D" uid="uid://dufpodxlswxp" path="res://background-day.png" id="1_bqhdr"]
+[ext_resource type="Script" uid="uid://dilem72oyckk2" path="res://Escenas/mundo.gd" id="1_ly0wt"]
+[ext_resource type="Texture2D" uid="uid://bn4e4sjgbp7i6" path="res://base.png" id="2_ly0wt"]
+[ext_resource type="PackedScene" uid="uid://gr4821mliec4" path="res://Escenas/pajaro.tscn" id="3_rxj15"]
+[ext_resource type="PackedScene" uid="uid://cb3t6jphbcm6m" path="res://Escenas/Caño.tscn" id="5_rxj15"]
+
+[node name="Mundo" type="Node2D" unique_id=179034514]
+script = ExtResource("1_ly0wt")
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=997503414]
+repeat_size = Vector2(288, 0)
+autoscroll = Vector2(-150, 0)
+repeat_times = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=501276763]
+texture = ExtResource("1_bqhdr")
+centered = false
+
+[node name="Base" type="Sprite2D" parent="." unique_id=923475039]
+position = Vector2(167, 456)
+texture = ExtResource("2_ly0wt")
+
+[node name="Base2" type="Sprite2D" parent="." unique_id=1910265919]
+position = Vector2(502, 456)
+texture = ExtResource("2_ly0wt")
+
+[node name="Base3" type="Sprite2D" parent="." unique_id=1460597115]
+position = Vector2(838, 456)
+texture = ExtResource("2_ly0wt")
+
+[node name="Pajaro" parent="." unique_id=1856319336 instance=ExtResource("3_rxj15")]
+position = Vector2(0, 250)
+
+[node name="Caños" type="Node2D" parent="." unique_id=1770832289]
+
+[node name="Caño" parent="Caños" unique_id=699348534 instance=ExtResource("5_rxj15")]
+position = Vector2(887, 409)
+
+[node name="Caño2" parent="Caños" unique_id=2132549603 instance=ExtResource("5_rxj15")]
+position = Vector2(1156, 456)
+
+[node name="Caño3" parent="Caños" unique_id=51421271 instance=ExtResource("5_rxj15")]
+position = Vector2(1413, 422)
+
+[node name="Caño4" parent="Caños" unique_id=1935150226 instance=ExtResource("5_rxj15")]
+position = Vector2(1739, 383)
+
+[node name="Caño5" parent="Caños" unique_id=513442978 instance=ExtResource("5_rxj15")]
+position = Vector2(887, -73)
+rotation = 3.1415927
+
+[node name="Caño6" parent="Caños" unique_id=712794569 instance=ExtResource("5_rxj15")]
+position = Vector2(1156, -26)
+rotation = 3.1415927
+
+[node name="Caño7" parent="Caños" unique_id=958113742 instance=ExtResource("5_rxj15")]
+position = Vector2(1413, -60)
+rotation = 3.1415927
+
+[node name="Caño8" parent="Caños" unique_id=1176709583 instance=ExtResource("5_rxj15")]
+position = Vector2(1739, -99)
+rotation = 3.1415927

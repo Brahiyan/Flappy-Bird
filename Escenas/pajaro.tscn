@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://gr4821mliec4"]
+
+[ext_resource type="Script" uid="uid://blbfq3gi2jixk" path="res://Escenas/pajaro.gd" id="1_bbc1k"]
+[ext_resource type="Texture2D" uid="uid://bh2y00jduhp2b" path="res://yellowbird-midflap.png" id="1_qe5t2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6jhai"]
+radius = 16.03122
+
+[node name="Pajaro" type="CharacterBody2D" unique_id=1856319336]
+script = ExtResource("1_bbc1k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1324272869]
+shape = SubResource("CircleShape2D_6jhai")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1908943117]
+texture = ExtResource("1_qe5t2")

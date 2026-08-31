@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cb3t6jphbcm6m"]
+
+[ext_resource type="Script" uid="uid://cgdxsujplthjp" path="res://Escenas/caño.gd" id="1_7br5j"]
+[ext_resource type="Texture2D" uid="uid://b2d16nqptlbdb" path="res://pipe-green.png" id="1_jjayq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6jhai"]
+size = Vector2(46, 310)
+
+[node name="Caño" type="Area2D" unique_id=699348534]
+script = ExtResource("1_7br5j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1427058448]
+texture = ExtResource("1_jjayq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=355151717]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_6jhai")
